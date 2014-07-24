@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Functional testing of Application</title>
+    <link rel="stylesheet" href="lib/qunit.css">
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/qunit.js"></script>
+<script src="lib/apicall.js"></script>
+<script src="../components/underscore/underscore-min.js"></script>
+<script src="../components/underscore.string/dist/underscore.string.min.js"></script>
+<script>_.mixin(_.str.exports());</script>
+<!-- needed to include underscore-string -->
+<script>_.includes = _.str.include;</script>
+
+<script src="lib/user/user-init.js"></script>
+<script src="lib/user/user-example.js"></script>
+<script src="lib/user/user.js"></script>
+</body>
+</html>

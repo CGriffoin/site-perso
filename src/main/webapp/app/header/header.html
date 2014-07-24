@@ -1,0 +1,17 @@
+<div id="G_header" ng-controller="HeaderCtrl">
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner g-header-navbar">
+            <ul class="nav row-fluid">
+                <li id="G_header-home" class="span2" ng-click="goToHome()">
+                    <a class="g-header-home g-header-text">
+                        <i class="fa fa-th icon-white"/> {{ homeLabel | capitalizeFormat}}
+                    </a>
+                </li>
+                <li class="span10">
+                    <p id="G_header-title" class="navbar-text g-header-text">{{ appTitle | capitalizeFormat}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

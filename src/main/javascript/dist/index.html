@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="geminicode">
+<head>
+
+    <!-- Styles -->
+    <link href="components/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="components/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="app/main.css" rel="stylesheet">
+    <link href="components/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="components/select2/select2.css" rel="stylesheet">
+    <link href="components/pnotify/jquery.pnotify.default.css" rel="stylesheet">
+
+    <title>Angélo LIMA | Site perso</title>
+</head>
+<body>
+
+<div>
+    <div class="masthead">
+        <div ng-include src="'app/header/header.html'"></div>
+    </div>
+</div>
+
+<div id="G_container" class="container fill">
+
+    <div id="G_map">
+
+        <div id="G_wrapper">
+
+            <div id="G_content">
+                <div ng-view></div>
+            </div>
+            <!-- #content -->
+
+        </div>
+        <!-- #wrapper -->
+
+
+    </div>
+    <!-- /map -->
+</div>
+<!-- /container -->
+
+
+<div id="G_footer" style="display: none" ng-controller="FooterCtrl">
+    <div class="g-verb"></div>
+    <div class="g-path"></div>
+    <div class="g-body"></div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Librairies -->
+
+<!-- build:js js/app.js -->
+<script src="components/jquery/jquery.min.js"></script>
+<script src="components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="components/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="components/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="components/pnotify/jquery.pnotify.min.js"></script>
+<script src="components/stringjs/lib/string.min.js"></script>
+<script src="components/underscore/underscore-min.js"></script>
+<!--minimize--><script src="app/utils/enum.js"></script>
+<script src="components/underscore.string/dist/underscore.string.min.js"></script>
+<script src="components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+<script src="components/angular/angular.min.js"></script>
+<script src="components/angular-strap/dist/angular-strap.min.js"></script>
+<script src="components/momentjs/min/moment.min.js"></script>
+<script src="components/ng-file-upload/angular-file-upload.js"></script>
+
+<!--minimize--><script src="app/_shared/modules/constant.js"></script>
+<!--minimize--><script src="app/_shared/modules/load.js"></script>
+<!--minimize--><script src="app/_shared/modules/error.js"></script>
+<script src="app/app.js"></script>
+<!--minimize--><script src="app/header/headerCtrl.js"></script>
+<!--minimize--><script src="app/loading/loadingCtrl.js"></script>
+<!--minimize--><script src="app/example/examples/examplesCtrl.js"></script>
+<!--minimize--><script src="app/example/example/exampleCtrl.js"></script>
+<!--minimize--><script src="app/example/examplenew/exampleNewCtrl.js"></script>
+
+<!--minimize--><script src="app/_shared/controllers/errorCtrl.js"></script>
+<!--minimize--><script src="app/_shared/controllers/footerCtrl.js"></script>
+
+<!--minimize--><script src="app/_shared/services/utilSrvc.js"></script>
+<!--minimize--><script src="app/_shared/services/requestParamsSrvc.js"></script>
+<!--minimize--><script src="app/example/exampleSrvc.js"></script>
+<!--minimize--><script src="app/_shared/services/httpSrvc.js"></script>
+
+<!--minimize--><script src="app/_shared/directives/inputeditable/inputEditableDrtv.js"></script>
+
+<!--minimize--><script src="app/_shared/filters/capitalizeFltr.js"></script>
+
+<!--minimize--><script src="app/_shared/analytics/analytics.js"></script>
+<!--minimize--><script src="app/_shared/modules/util.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

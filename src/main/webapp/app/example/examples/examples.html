@@ -1,0 +1,32 @@
+<div id="G_examples" class="row-fluid">
+    <div class="jumbotron">
+
+        <div id="G_examples-new-btn" class="btn g-examples-new-btn" ng-click="goToCreateExample()">New Example</div>
+
+        <h4>Examples</h4>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th id="G_example-id-header">
+                    Identifier
+                </th>
+                <th id="G_example-name-header">
+                    Name
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="example in examples" ng-click="exampleSelected(example.id)">
+
+                <td id="G_example-id-{{$index+1}}">
+                    {{example.id}}
+                </td>
+                <td id="G_example-name-{{$index+1}}">
+                    {{example.name}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

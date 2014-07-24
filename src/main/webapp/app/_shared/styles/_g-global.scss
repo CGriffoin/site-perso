@@ -1,0 +1,27 @@
+/* Global variables */
+$light-grey-1: #f7f7f7;
+$medium-grey-2: #bbb;
+$dark-grey: #888;
+$ng-red: #e9322d;
+$ng-pink: #f8b9b7;
+
+/* "global" mixin */
+@mixin clickable {
+  cursor: pointer;
+}
+
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
+
+.g-editable-content {
+  @include clickable;
+  min-width: 100px;
+  min-height: 30px;
+  padding: 5px 0 0 6px;
+}
+
+.g-input-label {
+  font-weight: bold;
+}

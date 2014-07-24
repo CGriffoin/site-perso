@@ -1,0 +1,14 @@
+package com.geminicode.site.exception;
+
+public class NotFoundException extends Exception {
+
+	String message = "";
+
+	public NotFoundException(String message) {
+		this.message = message;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+}

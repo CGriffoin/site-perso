@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Registered requests</title>
+</head>
+<body>
+
+<div>
+
+    <div ng-controller="IntegrationTestCtrl">
+        <table >
+            <thead>
+            <tr>
+                <th id="RM_test-verb">
+                    verb
+                </th>
+                <th id="RM_test-url">
+                    url
+                </th>
+                <th id="RM_test-body">
+                    body
+                </th>
+                <th id="RM_test-code">
+                    code
+                </th>
+                <th id="RM_test-timestamp">
+                timestamp
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="request in requests" class="rm-RM_test-line">
+                <td id="RM_test-verb-{{$index+1}}" class="rm-test-verb">{{request.verb}}</td>
+                <td id="RM_test-url-{{$index+1}}" class="rm-test-url" >{{request.url}}</td>
+                <td id="RM_test-body-{{$index+1}}" class="rm-test-body">{{request.body}}</td>
+                <td id="RM_test-code-{{$index+1}}" class="rm-test-body">{{request.code}}</td>
+                <td id="RM_test-timestamp-{{$index+1}}" class="rm-test-body">{{request.timestamp}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="../lib/angular.min.js"></script>
+<script src="requests.js"></script>
+</body>
+</html>

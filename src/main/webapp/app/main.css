@@ -1,0 +1,60 @@
+/* Global variables */
+/* "global" mixin */
+.fill {
+  min-height: 100%;
+  height: 100%; }
+
+.g-editable-content {
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 30px;
+  padding: 5px 0 0 6px; }
+
+.g-input-label {
+  font-weight: bold; }
+
+#G_container {
+  padding-left: 15px;
+  padding-right: 15px; }
+  #G_container #G_map {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    margin-top: -10px; }
+  #G_container #G_wrapper {
+    min-height: 100%;
+    position: relative; }
+  #G_container #G_content {
+    padding-bottom: 100px;
+    margin-top: 20px; }
+
+#G_header .g-header-home {
+  cursor: pointer; }
+#G_header .g-header-navbar {
+  border-radius: 0px;
+  border: none;
+  background-image: none;
+  z-index: 2000; }
+  #G_header .g-header-navbar .nav li {
+    border-right: 1px solid;
+    height: 50px; }
+    #G_header .g-header-navbar .nav li a {
+      color: white;
+      text-shadow: none;
+      height: 30px; }
+    #G_header .g-header-navbar .nav li .g-header-text {
+      color: white;
+      text-shadow: none;
+      height: 30px;
+      margin-top: 4px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+  #G_header .g-header-navbar .nav li:last-child {
+    border-right: none; }
+#G_header .padding-right {
+  padding-right: 3em; }
+
+#G_examples .g-examples-new-btn {
+  margin-bottom: 40px; }

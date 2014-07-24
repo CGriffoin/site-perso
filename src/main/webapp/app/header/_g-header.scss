@@ -1,0 +1,43 @@
+#G_header {
+
+  .g-header-home {
+    @include clickable;
+  }
+
+  .g-header-navbar {
+    border-radius: 0px;
+    border: none;
+    background-image: none;
+    z-index: 2000;
+
+    .nav li {
+      border-right: 1px solid;
+
+      height: 50px;
+
+      a {
+        color: white;
+        text-shadow: none;
+        height: 30px;
+      }
+
+      .g-header-text {
+        color: white;
+        text-shadow: none;
+        height: 30px;
+        margin-top: 4px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+      }
+    }
+
+    .nav li:last-child {
+      border-right: none;
+    }
+  }
+
+  .padding-right {
+    padding-right: 3em;
+  }
+}

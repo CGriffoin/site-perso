@@ -1,0 +1,9 @@
+<div>
+
+    <span class="g-input-label">{{ label }}</span>
+
+    <span id="G_{{ identifier }}-editable-span" ng-hide="editMode" ng-click="editMode = true" class="g-editable-content">{{ text }}</span>
+
+    <input id="G_{{ identifier }}-editable-input" ng-show="editMode" type="text" ng-model="text"/>
+
+</div>
